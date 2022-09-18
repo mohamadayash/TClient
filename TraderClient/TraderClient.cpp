@@ -155,8 +155,6 @@ bool send(string command) {
 
 
 void sendTrade() {
-
-    while (true) {
         unsigned int number;
         rand_s(&number);
 
@@ -191,7 +189,6 @@ void sendTrade() {
         }
         
          std::this_thread::sleep_for(100ms);
-    }
 }
 
 bool sendLogin(string username,string password) {
